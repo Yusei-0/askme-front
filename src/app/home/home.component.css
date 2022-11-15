@@ -1,15 +1,18 @@
 .home{
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 4fr 5fr;
     height: 100vh;
 }
 .login--section{
     background-color: white;
+
 }
 .img--section{
-    background-color: red;
+    display: flex;
+   justify-content: center;
+   align-items: center;
 }
-.login--main{
+.register--main{
 
     width: 450px;
     display: flex;
@@ -18,17 +21,68 @@
     margin: 0 auto;
     margin-top: 70px;
 }
-.login--logo{
-    height: 65px;
+.register--logo{
+    width: 150px;
+    margin-top: 10px;
+    margin-left: 10px;
 }
 
 
-.login--title{
+.register--title{
     color: rgb(17, 24, 39);
     margin-bottom: 0px;
 }
 
-.login--subtitle{
+.register--subtitle{
     color: rgb(82, 89, 103);
     font-weight: 400;
+    margin-bottom: 50px;
+}
+
+input{
+    width: 300px ;
+    font-size: 1.1rem;
+    margin-bottom: 30px;
+    color: rgb(17, 24, 39);
+    border: none;
+    border-bottom: 1px solid rgb(17, 24, 39);
+}
+
+input:focus{
+    outline: none;
+    border-bottom: 1px solid rgb(17, 24, 39);
+}
+
+.register--create_acount-button{
+    width: 300px;
+    height: 40px;
+    border-radius: 20px;
+    border: none;
+    background-color: rgb(17, 24, 39);
+    color: white;
+    font-size: 1.1rem;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.img--login-button{
+    width: 150px;
+    height: 40px;
+    border-radius: 20px;
+    border: none;
+    background-color: rgb(17, 24, 39);
+    color: white;
+    font-size: 1.1rem;
+    font-weight: 500;
+    cursor: pointer;
+    align-self: flex-end;
+    top: 50px;
+    right: 100px;
+    position: absolute;
+}
+
+.img--register{
+
+   width: 80%;
+    border-radius: 20px;
 }
