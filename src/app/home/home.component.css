@@ -1,0 +1,34 @@
+.home{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 100vh;
+}
+.login--section{
+    background-color: white;
+}
+.img--section{
+    background-color: red;
+}
+.login--main{
+
+    width: 450px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    margin-top: 70px;
+}
+.login--logo{
+    height: 65px;
+}
+
+
+.login--title{
+    color: rgb(17, 24, 39);
+    margin-bottom: 0px;
+}
+
+.login--subtitle{
+    color: rgb(82, 89, 103);
+    font-weight: 400;
+}
