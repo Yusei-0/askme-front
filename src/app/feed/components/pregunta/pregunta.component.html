@@ -1,0 +1,26 @@
+<div class="pregunta">
+    <span class="asignatura">{{pregunta.asignatura}}</span>
+    <h3>{{pregunta.titulo}}?</h3>
+
+    <ul class="options-var">
+       <li>
+        <button mat-icon-button >
+        <mat-icon >star_border</mat-icon>
+        </button>
+        <span>
+        {{pregunta.votos}}
+        </span>
+       </li> 
+       <li>
+        <button mat-icon-button >
+        <mat-icon >chat_bubble_outline</mat-icon>
+        </button>
+        <span>{{ random() }}</span>
+       </li> 
+       <li>
+        <button mat-icon-button >
+        <mat-icon >bookmark_border</mat-icon>
+        </button>
+       </li> 
+    </ul>
+</div>

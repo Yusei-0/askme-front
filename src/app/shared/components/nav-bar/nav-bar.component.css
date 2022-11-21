@@ -1,0 +1,33 @@
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 10px;
+    box-shadow: 1px 1px 1px rgba(167, 167, 167, 0.37);
+    z-index: 1;
+}
+
+.logo{
+    width: 150px;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+.search {
+    min-width: 150px;
+    max-width: 500px;
+    width: 100%;
+  }
+
+  .example-full-width {
+    width: 100%;
+  }
+  
+.options{
+    display: flex;
+    align-items: center;
+}
+
+button{
+    margin-left: 20px;
+}

@@ -1,0 +1,15 @@
+<div class="feed">
+    <nav-bar></nav-bar>
+    <br>
+    <div class="feed-main">
+        <div></div>
+        <div class="feed-preguntas">
+            <div class="subtitle">
+                <h2>Preguntas top</h2>
+                <a mat-raised-button color="primary">Crear pregunta</a>
+            </div>
+           <pregunta *ngFor="let pregunta of preguntas; index as i" [pregunta]="pregunta"></pregunta>
+        </div>
+        <div></div>
+    </div>
+</div>
