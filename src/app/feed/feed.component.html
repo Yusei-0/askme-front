@@ -5,8 +5,8 @@
         <div></div>
         <div class="feed-preguntas">
             <div class="subtitle">
-                <h2>Preguntas top</h2>
-                <a mat-raised-button color="primary">Crear pregunta</a>
+                <h1>Preguntas top</h1>
+                <a routerLink="/newquestion" mat-raised-button color="primary">Crear pregunta</a>
             </div>
            <pregunta *ngFor="let pregunta of preguntas; index as i" [pregunta]="pregunta"></pregunta>
         </div>

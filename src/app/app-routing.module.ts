@@ -9,6 +9,10 @@ const routes: Routes = [
   {
     path : 'feed',
     loadChildren : () => import( './feed/feed.module').then(m => m.FeedModule)
+  },
+  {
+    path : 'newquestion',
+    loadChildren : () => import ('./new-question/new-question.module').then(m => m.NewQuestionModule)
   }
 ];
 

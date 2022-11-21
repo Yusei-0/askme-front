@@ -1,4 +1,6 @@
-export function getPreguntas(){
+import { Pregunta } from "../core/models/Pregunta.model";
+
+export function getPreguntas(): Pregunta[]{
     return [
         {
             titulo : "Como crear una clase ",
@@ -6,34 +8,37 @@ export function getPreguntas(){
             votos : 56,
             fecha : "15-02-2024",
             descripcion :"tengo una duda de como crear una clase",
-            asignatura : "IPI"
-
+            asignatura : "IPI",
+            comentarios: 18,
         },
         {
             titulo: "Que tipo de dato se utiliza para expresiones decimales ",
             idp : 8,
-            votos : 70,
+            votos : 14,
             fecha : "15-02-2024",
             descripcion :"No estoy seguro del tipo de dato para expresiones decimales ",
-            asignatura : "EDI"
+            asignatura : "EDI",
+            comentarios: 8,
         },
         {
             titulo : "Cuál cree que es la habilidad más importante que debería tener un programador ",
             idp : 2,
-            votos : 59,
+            votos : 29,
             fecha : "15-02-2024",
             descripcion :"Habilidad mas importante para ser mejor programador",
-            asignatura : "EDI"
+            asignatura : "EDI",
+            comentarios: 14,
 
 
         },
         {
             titulo : "Cuantos tipos de lenguaje existen para programar",
             idp : 12,
-            votos : 43,
+            votos : 13,
             fecha : "15-02-2024",
             descripcion :"Lenguajes para poder programar ",
-            asignatura : "IPI"
+            asignatura : "IPI",
+            comentarios: 4,
         },
         {
             titulo :"Que libros pueden servir para un programador ",
@@ -41,7 +46,8 @@ export function getPreguntas(){
             votos : 40,
             fecha :"15-02-2024",
             descripcion :"Algunos libros que me ayuden a programar",
-            asignatura : "EDI"
+            asignatura : "EDI",
+            comentarios: 8,
         }
     ]
 }

@@ -5,4 +5,5 @@ export interface Pregunta{
     fecha : string,
     descripcion :string,
     asignatura : string
+    comentarios: number
 }

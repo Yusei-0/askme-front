@@ -1,0 +1,32 @@
+<div class="new-question">
+    <nav-bar></nav-bar>
+
+    <div class="main">
+        <mat-card class="example-card">
+            <mat-card-header>
+              <mat-card-title>Crear nueva pregunta</mat-card-title>
+            </mat-card-header>
+             <mat-card-content>
+                <form class="example-form">
+                    <mat-form-field class="example-full-width">
+                      <mat-label>Titulo</mat-label>
+                      <input matInput placeholder="Como crear un objeto en java">
+                    </mat-form-field>
+                  <br>
+                    <mat-form-field class="example-full-width">
+                      <mat-label>Descripcion</mat-label>
+                      <textarea matInput placeholder="No se como crear un objeto en..."></textarea>
+                    </mat-form-field>
+                  </form>
+            </mat-card-content>
+            <mat-card-actions>
+              <a routerLink="/feed">
+                  <button mat-button color="primary">CREAR</button>
+              </a>
+              <a routerLink="/feed">
+                  <button mat-button color="warn">CANCELAR</button>
+              </a>
+            </mat-card-actions>
+          </mat-card>
+    </div>
+</div>

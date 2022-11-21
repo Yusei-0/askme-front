@@ -15,7 +15,8 @@ export class PreguntaComponent implements OnInit {
     fecha : '',
     idp: 0,
     titulo : '',
-    votos: 0
+    votos: 0,
+    comentarios: 0
   }
 
   constructor() { }
