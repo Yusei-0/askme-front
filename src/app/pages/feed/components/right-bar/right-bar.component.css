@@ -1,0 +1,10 @@
+.right-bar{
+    width: 100%;
+    height: 520px;
+    
+    margin-right: 80px;
+    margin-top: 30px;
+    border-radius: 8px;
+    background-color: rgb(241, 238, 238);
+    
+}

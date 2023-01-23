@@ -3,8 +3,10 @@ import { CommonModule } from '@angular/common';
 
 import { HomeRoutingModule } from './home-routing.module';
 import { HomeComponent } from './home.component';
-import { MaterialModule } from '../material/material.module';
+import { MaterialModule } from '../../material/material.module';
 import { RouterModule } from '@angular/router';
+import { HttpClientModule } from '@angular/common/http';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -14,8 +16,11 @@ import { RouterModule } from '@angular/router';
   imports: [
     CommonModule,
     HomeRoutingModule,
+    ReactiveFormsModule,
+    FormsModule,
     MaterialModule,
-    RouterModule
+    RouterModule,
+    HttpClientModule,
   ]
 })
 export class HomeModule { }

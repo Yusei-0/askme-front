@@ -4,16 +4,14 @@ import { MaterialModule } from '../material/material.module';
 import { FooterComponent } from './components/footer/footer.component';
 import { NavBarComponent } from './components/nav-bar/nav-bar.component';
 
-
-
 @NgModule({
   declarations: [
     FooterComponent,
-     NavBarComponent
+     NavBarComponent,
   ],
   imports: [
     CommonModule,
-    MaterialModule
+    MaterialModule,
   ],
   exports: [
     NavBarComponent,

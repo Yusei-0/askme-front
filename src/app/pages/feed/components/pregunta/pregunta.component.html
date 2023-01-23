@@ -1,0 +1,56 @@
+<div class="pregunta">
+
+    <div class="left-side">
+        <button mat-icon-button>
+            <mat-icon>
+                expand_less
+            </mat-icon>
+        </button>
+        <span class="preguntas--votos">{{pregunta.votos}}</span>
+        <button mat-icon-button>
+            <mat-icon>
+                expand_more
+            </mat-icon>
+        </button>
+    </div>
+
+    <div class="right-side">
+        <div class="pregunta--data">
+            <span class="fecha">Preguntado: {{ getFechaMoment(pregunta.fecha)}}</span>
+            <span class="asignatura"> Asignatura: <span
+                    style="color: rgb(26, 26, 231);">{{pregunta.asignatura}}</span></span>
+        </div>
+        <h2 class="pregunta--titulo">
+            {{pregunta.titulo}}
+        </h2>
+        <p class="pregunta--descripcion">{{pregunta.descripcion}}</p>
+
+        <div class="pregunta--actions">
+            <div class="left-buttons">
+                <button mat-flat-button class="btn-comentarios">
+                    <mat-icon>
+                        chat_bubble
+                    </mat-icon>
+                    <span class="text-flat-button">
+                        {{pregunta.comentarios}} Respuestas
+                    </span>
+                </button>
+
+                <button mat-flat-button class="btn-marcador" matTooltip="Guarda una pregunta para verla luego"
+                    [matTooltipPosition]="'above'">
+                    <mat-icon>
+                        bookmark
+                    </mat-icon>
+                    <span class="text-flat-button">
+                        Marcador
+                    </span>
+                </button>
+            </div>
+
+            <button mat-flat-button class="btn-responder" matTooltip="Responde esta pregunta"
+            [matTooltipPosition]="'above'">
+                Responder
+            </button>
+        </div>
+    </div>
+</div>

@@ -1,5 +1,6 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { Pregunta } from 'src/app/core/models/Pregunta.model';
+import * as moment from "moment";
 
 @Component({
   selector: 'pregunta',
@@ -12,7 +13,7 @@ export class PreguntaComponent implements OnInit {
   pregunta: Pregunta = {
     asignatura : '',
     descripcion: '',
-    fecha : '',
+    fecha : new Date,
     idp: 0,
     titulo : '',
     votos: 0,
@@ -22,6 +23,14 @@ export class PreguntaComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+
+  getFechaMoment(fecha : Date){
+
+    const now = moment()
+    moment.locale("es")
+    return moment(fecha).fromNow();
   }
 
   random(){

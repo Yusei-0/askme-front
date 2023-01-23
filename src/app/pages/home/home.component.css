@@ -24,19 +24,22 @@
 .register--logo{
     width: 150px;
     margin-top: 20px;
-    margin-left: 150px;
+    margin-left: 100px;
 }
 
 
 .register--title{
     color: rgb(17, 24, 39);
-    margin-bottom: 0px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-size: 2rem;
 }
 
 .register--subtitle{
     color: rgb(82, 89, 103);
     font-weight: 400;
     margin-bottom: 50px;
+    font-size: 1.1rem;
 }
 
 input{
