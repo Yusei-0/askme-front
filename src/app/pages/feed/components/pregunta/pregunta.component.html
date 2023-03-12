@@ -1,13 +1,13 @@
 <div class="pregunta">
 
     <div class="left-side">
-        <button mat-icon-button>
+        <button mat-icon-button (click)="votar()">
             <mat-icon>
                 expand_less
             </mat-icon>
         </button>
         <span class="preguntas--votos">{{pregunta.votos}}</span>
-        <button mat-icon-button>
+        <button mat-icon-button (click)="quitarVoto()">
             <mat-icon>
                 expand_more
             </mat-icon>
@@ -48,7 +48,7 @@
             </div>
 
             <button mat-flat-button class="btn-responder" matTooltip="Responde esta pregunta"
-            [matTooltipPosition]="'above'">
+            [matTooltipPosition]="'above'" (click)="responder()">
                 Responder
             </button>
         </div>

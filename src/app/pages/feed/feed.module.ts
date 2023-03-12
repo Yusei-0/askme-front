@@ -16,6 +16,9 @@ import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatIconModule } from '@angular/material/icon';
 import { MatListModule } from '@angular/material/list';
 import { RightBarComponent } from './components/right-bar/right-bar.component';
+import { DialogPreguntaComponent } from './components/dialog-pregunta/dialog-pregunta.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { DialogRespuestaComponent } from './components/dialog-respuesta/dialog-respuesta.component';
 
 
 @NgModule({
@@ -23,7 +26,9 @@ import { RightBarComponent } from './components/right-bar/right-bar.component';
     FeedComponent,
     PreguntaComponent,
     SidenavComponent,
-    RightBarComponent
+    RightBarComponent,
+    DialogPreguntaComponent,
+    DialogRespuestaComponent
   ],
   imports: [
     CommonModule,
@@ -37,7 +42,9 @@ import { RightBarComponent } from './components/right-bar/right-bar.component';
     MatButtonModule,
     MatSidenavModule,
     MatIconModule,
-    MatListModule
+    MatListModule,
+    FormsModule,
+    ReactiveFormsModule
   ]
 })
 export class FeedModule { }

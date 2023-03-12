@@ -1,3 +1,34 @@
 <div class="right-bar">
+<h2>Entradas Recientes</h2>
+
+<mat-selection-list #shoes [multiple]="false">
+    <mat-list-option *ngFor="let entrada of entradasBlog" [value]="entrada">
+      <p class="entrada--titulo">{{entrada.titulo}}</p>
+      <p class="entrada--view">
+        <mat-icon>visibility</mat-icon>
+        <span>{{entrada.vistas}}</span>
+        Vistas
+      </p>
+    </mat-list-option>
+  </mat-selection-list>
+</div>
+
+<div class="right-bar follow-bar">
+  <h2>Usuarios sugeridos</h2>
+
+  <mat-list>
+    <mat-list-item *ngFor="let usuario of usuariosSugeridos" class="list-item">
+      <div class="follow-user">
+        <span class="username">{{usuario.username}}</span>
+        <button mat-button>
+            Seguir
+        </button>
+        <div class="follow-folowers entrada--view">
+          {{usuario.folowers}}
+          <span> Seguidores</span>
+        </div>
+      </div>
+    </mat-list-item>
+  </mat-list>
 
 </div>

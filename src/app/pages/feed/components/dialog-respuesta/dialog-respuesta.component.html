@@ -1,0 +1,20 @@
+<form class="example-form" [formGroup]="form">
+    <h2>Respondiendo Pregunta</h2>
+
+    <mat-form-field class="example-full-width" [appearance]="'outline'" >
+      <mat-label>Descripcion</mat-label>
+      <textarea matInput placeholder="Describe tu duda" formControlName="descripcion"></textarea>
+    </mat-form-field>
+
+    <br>
+    <div class="actions">
+        <button mat-flat-button [color]="'primary'" class="create" [mat-dialog-close]="1">
+          Responder
+        </button>
+    
+        <button mat-flat-button [color]="'warn'" class="close" (click)="close()">
+            Cerrar
+        </button>
+    </div>
+
+  </form>

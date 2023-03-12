@@ -7,7 +7,7 @@
     </mat-toolbar>
     <mat-nav-list>
       <a mat-list-item href="#">
-        <mat-icon class="nav-icon">home</mat-icon>
+        <mat-icon class="nav-icon material-icons-rounded" material-icon-rounded>home</mat-icon>
         <span class="text-nav-button"> Inicio</span>
       </a>
       <a mat-list-item href="#">
@@ -30,7 +30,7 @@
         <mat-icon class="nav-icon">settings</mat-icon>
         <span class="text-nav-button"> Ajustes</span>
       </a>
-        <button  mat-button class="nueva-pregunta">
+        <button  mat-button class="nueva-pregunta" (click)="nuevaPregunta()">
           Nueva pregunta
         </button>
     </mat-nav-list>

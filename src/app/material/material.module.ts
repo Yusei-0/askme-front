@@ -11,6 +11,8 @@ import {MatSidenavModule} from '@angular/material/sidenav';
 import {MatDividerModule} from '@angular/material/divider';
 import {MatTabsModule} from '@angular/material/tabs';
 import {MatTooltipModule} from '@angular/material/tooltip';
+import {MatListModule} from '@angular/material/list'; 
+import {MatDialogModule} from '@angular/material/dialog'; 
 
 @NgModule({
   declarations: [],
@@ -26,7 +28,9 @@ import {MatTooltipModule} from '@angular/material/tooltip';
     MatSidenavModule,
     MatDividerModule,
     MatTabsModule,
-    MatTooltipModule
+    MatTooltipModule,
+    MatListModule,
+    MatDialogModule,
   ],
   exports : [
     MatFormFieldModule,
@@ -39,7 +43,9 @@ import {MatTooltipModule} from '@angular/material/tooltip';
     MatSidenavModule,
     MatDividerModule,
     MatTabsModule,
-    MatTooltipModule
+    MatTooltipModule,
+    MatListModule,
+    MatDialogModule,
   ]
 })
 export class MaterialModule { }

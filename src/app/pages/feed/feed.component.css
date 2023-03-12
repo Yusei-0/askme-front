@@ -60,6 +60,11 @@ margin-right: 0;
 padding-right: 0;
 }
 
+app-right-bar{
+    position: relative;
+    left: -50px;
+}
+
 a{
     display: flex;
     align-items: center;

@@ -42,7 +42,7 @@
     font-size: 1.1rem;
 }
 
-input{
+/* input{
     width: 300px ;
     font-size: 1.1rem;
     margin-bottom: 30px;
@@ -54,7 +54,7 @@ input{
 input:focus{
     outline: none;
     border-bottom: 1px solid rgb(17, 24, 39);
-}
+} */
 
 .register--create_acount-button{
     width: 300px;

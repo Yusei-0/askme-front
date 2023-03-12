@@ -1,0 +1,21 @@
+.example-form {
+    min-width: 450px;
+    max-width: 600px;
+    width: 100%;
+  }
+  
+  .example-full-width {
+    width: 100%;
+  }
+  button{
+    margin-left: 15px;
+  }
+
+  .actions{
+    display: flex;
+    justify-content: end;
+  }
+  .create{
+    padding-left: 35px;
+    padding-right: 35px;
+  }
